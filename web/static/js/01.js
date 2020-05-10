@@ -13,16 +13,46 @@ for (i = 0; i < hrs.length; i++) {
     hrs[i].size = "7px"
     
 }
-
-
     
+var divAnimes = document.getElementById("divAnimes")
+var divSeries = document.getElementById("divSeries")
+var divMovies = document.getElementById("divMovies")
+var divGames = document.getElementById("divGames")
+
+var animesBtn = document.getElementById("animesBtn")
+var seriesBtn = document.getElementById("seriesBtn")
+var moviesBtn = document.getElementById("moviesBtn")
+var gamesBtn = document.getElementById("gamesBtn")
 
 
+animesBtn.addEventListener("click",() => {
+    divAnimes.style.display = "block"
+    divSeries.style.display = "none"
+    divMovies.style.display = "none"
+    divGames.style.display = "none"
 
+});
 
+seriesBtn.addEventListener("click",() => {
+    divAnimes.style.display = "none"
+    divSeries.style.display = "block"
+    divMovies.style.display = "none"
+    divGames.style.display = "none"
 
+});
 
+moviesBtn.addEventListener("click",() => {
+    divAnimes.style.display = "none"
+    divSeries.style.display = "none"
+    divMovies.style.display = "block"
+    divGames.style.display = "none"
 
+});
 
-var animes = document.getElementById("divAnimes")
-animes.style.visibility = "hidden";
+gamesBtn.addEventListener("click",() => {
+    divAnimes.style.display = "none"
+    divSeries.style.display = "none"
+    divMovies.style.display = "none"
+    divGames.style.display = "block"
+
+});
